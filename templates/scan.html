@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h2 class="mb-4">Scan Options</h2>
+        
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="d-grid gap-3">
+                        <button type="submit" name="upload_photo" class="btn btn-primary btn-lg">
+                            Upload Photo
+                        </button>
+                        <button type="submit" name="upload_video" class="btn btn-primary btn-lg">
+                            Upload Video
+                        </button>
+                        <button type="submit" name="open_camera" class="btn btn-primary btn-lg">
+                            Open Camera
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Sign Language Detection</h1>
+    <p class="lead">Upload images or videos of sign language gestures to detect their meaning.</p>
+    <hr class="my-4">
+    <p>Get started by clicking the button below.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('scan') }}" role="button">Start Scanning</a>
+</div>
+{% endblock %}

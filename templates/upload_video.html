@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="mb-4">Upload Video</h2>
+        
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Select a video file</label>
+                        <input class="form-control" type="file" id="file" name="file" accept="video/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Process Video</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
